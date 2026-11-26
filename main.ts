@@ -27,10 +27,10 @@ const CFG = {
   maxDevBuyLamports: 2_500_000_000n, // 2.5 SOL: a huge dev buy is a dump waiting
   maxSellShare: 0.2, // sells so far may be at most this share of volume
   maxRunupX: 2.2, // never chase a launch already up more than this
-  stakeLamports: 150_000_000n, // 0.15 SOL flat stake per launch
+  stakeLamports: 100_000_000n, // 0.10 SOL: smaller stakes, smoother curve
   minBuyLamports: 10_000_000n, // the guardrail's round-trip floor: 0.01 SOL
-  takeProfitX: 1.12, // +12% over average cost: take it
-  stopLossX: 0.91, // -9%: cut it
+  takeProfitX: 1.1, // +10% over average cost: bank wins sooner
+  stopLossX: 0.92, // -8%: cut it sooner too
   maxHoldSlots: 40, // ~16 seconds of slots: out, whatever the tape says
   cashKeepLamports: 500_000_000n, // keep 0.5 SOL back for fees and margin
   buySlippageBps: 3000, // launches jump around; a refused buy costs nothing
